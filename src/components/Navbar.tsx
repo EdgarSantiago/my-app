@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="text-[#6173f4] font-bold align-middle max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+    <nav className="text-[#6173f4] font-bold align-middle max-w-6xl flex flex-wrap items-center justify-between mx-auto p-2">
       <a href="/" className="text-2xl">
         Japanese
       </a>
