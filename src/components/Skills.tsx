@@ -15,14 +15,17 @@ function Skills() {
     { icon: <CiHeart size={"40px"} className="text-indigo-500" /> },
   ];
   return (
-    <div className="flex  flex-col gap-12 py-32 px-4 justify-center ">
+    <div
+      id="Habilidades"
+      className="flex  flex-col gap-12 py-32 px-4 justify-center "
+    >
       {/* TOP */}
       <TopHeader
         title="Nossas habilidades"
         desc="Essas são nossas habilidades ☕"
       />
       {/* TOP */}
-      <div className="max-w-6xl grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 sm:mx-auto">
+      <div className="max-w-6xl grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 sm:mx-auto">
         {skillsData.map((skill, i) => (
           <SkillCard key={i} skill={skill} />
         ))}
@@ -36,7 +39,7 @@ export default Skills;
 function SkillCard({ skill }: any) {
   const { icon } = skill;
   return (
-    <div className="flex gap-5  text-start rounded-md  p-4">
+    <div className="flex gap-5 text-start rounded-md  ">
       <div>{icon}</div>
       <div className=" flex flex-col gap-2">
         <Text color="text-black">titulo</Text>

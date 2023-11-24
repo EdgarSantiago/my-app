@@ -1,13 +1,16 @@
+import HeroNavbar from "./HeroNavbar";
+
 function Hero() {
   return (
-    <div className="bg-blue-400 ">
-      <div className="max-w-6xl flex flex-col lg:flex-row gap-28 lg:gap-40  min-h-screen lg:max-h-[500px] px-4 py-12 mx-auto">
-        <div className="gap-5 flex flex-col justify-center ">
+    <div id="Início" className="bg-blue-400 relative">
+      <HeroNavbar />
+      <div className="max-w-6xl flex flex-col lg:flex-row gap-28 lg:gap-40  min-h-screen lg:max-h-[500px] px-4 pt-6 md:pt-32 lg:pt-12 mx-auto">
+        <div className="gap-5 flex flex-col justify-center w-full">
           <h1 className="text-3xl lg:text-4xl font-bold text-white ">
-            🔷 Meu diario!
+            🔷 irure ullamco.
           </h1>
           <h1 className="text-3xl lg:text-4xl font-thin text-white ">
-            Aqui você monta seu blog com facilidade
+            Minim fugiat qui ad ad doad ad do.
           </h1>
           <div className="flex flex-row gap-5 justify-center mt-5">
             {[1, 2, 3].map(() => (
@@ -21,7 +24,7 @@ function Hero() {
           </div>
         </div>
         <img
-          className="lg:max-h-[800px] m-auto"
+          className="lg:max-h-[800px] m-auto "
           alt="xd"
           src="https://store.mmbkz.cn/usr/themes/crew/img/mydiary_00.webp"
         />

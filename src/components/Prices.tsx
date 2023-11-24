@@ -3,7 +3,10 @@ import TopHeader from "./global/TopHeader";
 
 function Prices() {
   return (
-    <div className="flex flex-col gap-10 py-32 px-4 bjustify-center">
+    <div
+      id="Preços"
+      className="flex flex-col gap-10 py-32 px-4 bjustify-center"
+    >
       {/* TOP */}
       <TopHeader title="Preços" desc="Um pouquinho sobre nossos preços" />
       {/* TOP */}
@@ -23,7 +26,10 @@ function PriceCard() {
     <div className="flex flex-col gap-4 min-h-[14rem] border-2 border-gray-100 rounded-md  p-4">
       <Text>🔷 Meu diario</Text>
       <h1 className="text-3xl ">R$50</h1>
-      <Text>自适应、多功能、照片集、文集、旅行地图</Text>
+      <Text>
+        Ea tempor et nostrud nostrud consequat consequat magna quis aliquip
+        nulla quis.
+      </Text>
       <span className="flex items-center">
         <span className="h-px flex-1 bg-gray-100"></span>
       </span>

@@ -1,34 +1,30 @@
+import React from "react";
+import Text from "./global/Text";
+import { motion, useScroll } from "framer-motion";
+
 function Navbar() {
   return (
-    <nav className="text-[#6173f4] font-bold align-middle max-w-6xl flex flex-wrap items-center justify-between mx-auto p-2">
-      <a href="/" className="text-2xl">
-        Japanese
-      </a>
-      <button
-        data-collapse-toggle="navbar-dropdown"
-        type="button"
-        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm  text-[#6173f4] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
-        aria-controls="navbar-dropdown"
-        aria-expanded="false"
+    <div className="absolute w-full z-50 bg-white">
+      <motion.nav /** the variants object needs to be passed into the motion component **/
+        className="py-6 font-semibold align-middle max-w-6xl flex flex-wrap items-center justify-between w-full mx-auto p-2 "
       >
-        <span className="sr-only">Open main menu</span>
-        <svg
-          className="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          />
-        </svg>
-      </button>
-    </nav>
+        <a href="/" className="text-4xl">
+          Lading page
+        </a>
+
+        <div className="flex flex-row gap-5">
+          {["Início", "Preços", "Sobre nós", "Nosso time", "Habilidades"].map(
+            (v, i) => (
+              <Text color="" key={i}>
+                <a href={`/#${v}`} className="nav-hover p-2 cursor-pointer">
+                  {v}
+                </a>
+              </Text>
+            )
+          )}
+        </div>
+      </motion.nav>
+    </div>
   );
 }
 
