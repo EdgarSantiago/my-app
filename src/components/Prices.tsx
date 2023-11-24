@@ -3,7 +3,7 @@ import TopHeader from "./global/TopHeader";
 
 function Prices() {
   return (
-    <div className="flex flex-col gap-10 py-20 px-4">
+    <div className="flex flex-col gap-10 py-32 px-4 bjustify-center">
       {/* TOP */}
       <TopHeader title="Preços" desc="Um pouquinho sobre nossos preços" />
       {/* TOP */}

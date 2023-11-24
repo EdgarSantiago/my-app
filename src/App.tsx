@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Prices from "./components/Prices";
 import AboutUs from "./components/AboutUs";
+import Teams from "./components/Teams";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Hero />
       <Prices />
       <AboutUs />
+      <Teams />
+      <Skills />
     </div>
   );
 }

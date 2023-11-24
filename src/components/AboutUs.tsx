@@ -3,7 +3,7 @@ import TopHeader from "./global/TopHeader";
 
 function AboutUs() {
   return (
-    <div className="flex flex-col gap-10 py-10 px-4 sm:px-20 mt-32">
+    <div className="flex flex-col gap-10 py-32 px-4 sm:px-20 ">
       {/* TOP */}
       <TopHeader title="Sobre nós" desc="Um pouquinho sobre nós" />
       {/* TOP */}
