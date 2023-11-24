@@ -70,25 +70,6 @@ export default Navbar;
 function MobileLinks() {
   const [showMenu, setshowMenu] = useState(false);
 
-  function Menu() {
-    return (
-      <ul className="space-y-1 bg-white rounded-lg p-2">
-        {["Início", "Preços", "Sobre nós", "Nosso time", "Habilidades"].map(
-          (v, i) => (
-            <li>
-              <a
-                href={`/#${v}`}
-                className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
-              >
-                {v}
-              </a>
-            </li>
-          )
-        )}
-      </ul>
-    );
-  }
-
   return (
     <>
       <button
@@ -124,5 +105,24 @@ function MobileLinks() {
         )}
       </AnimatePresence>
     </>
+  );
+}
+
+function Menu() {
+  return (
+    <ul className="space-y-1 bg-white rounded-lg p-2">
+      {["Início", "Preços", "Sobre nós", "Nosso time", "Habilidades"].map(
+        (v, i) => (
+          <li>
+            <a
+              href={`/#${v}`}
+              className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
+            >
+              {v}
+            </a>
+          </li>
+        )
+      )}
+    </ul>
   );
 }
