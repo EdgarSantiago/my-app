@@ -10,11 +10,6 @@ import Footer from "./components/Footer";
 import { useScroll } from "framer-motion";
 
 function App() {
-  const { scrollXProgress } = useScroll();
-
-  useEffect(() => {
-    console.log(scrollXProgress);
-  }, [scrollXProgress]);
   return (
     <div className="App">
       <Navbar />
