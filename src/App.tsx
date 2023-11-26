@@ -8,7 +8,7 @@ import Teams from "./components/Teams";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import { useScroll } from "framer-motion";
-
+//teste
 function App() {
   return (
     <div className="App">
