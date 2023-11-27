@@ -43,8 +43,8 @@ function Navbar() {
       transition={{ duration: 0.5 }}
       className="sticky top-0 lg:fixed w-full z-50 bg-white"
     >
-      <nav className="py-6 font-semibold align-middle max-w-6xl flex flex-wrap items-center justify-between w-full mx-auto p-2">
-        <a href="/" className="text-3xl lg:text-4xl">
+      <nav className="p-3 md:p-4 lg:p-6 font-semibold align-middle max-w-6xl flex flex-wrap items-center justify-between w-full mx-auto ">
+        <a href="/" className="text-xl md:text-2xl lg:text-4xl">
           Landing page
         </a>
         <MobileLinks />
@@ -95,12 +95,20 @@ function MobileLinks() {
       <AnimatePresence>
         {showMenu && (
           <motion.div
+            onClick={() => setshowMenu(!showMenu)}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute top-[90px] right-1"
+            className="absolute top-[63px] right-0 bg-[#1111117e] w-full h-[100vh]"
           >
-            <Menu />
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="top-[10px] right-2 absolute "
+            >
+              <Menu />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
