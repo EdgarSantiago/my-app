@@ -24,7 +24,7 @@ export default Prices;
 function PriceCard() {
   return (
     <div className="flex flex-col gap-4 min-h-[14rem] border-2 border-gray-100 rounded-md  p-4">
-      <Text>🔷 Meu diario</Text>
+      <Text>Nome do plano</Text>
       <h1 className="text-3xl ">R$50</h1>
       <Text>
         Ea tempor et nostrud nostrud consequat consequat magna quis aliquip
@@ -41,7 +41,7 @@ function PriceCard() {
         ))}
       </ul>
       <a
-        className="inline-block w-[150px] mx-auto items-center gap-2 rounded-lg border  px-4 py-1 text-black hover:bg-transparent hover:text-white hover:bg-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+        className="transition-all inline-block w-[150px] mx-auto items-center gap-2 rounded-lg border  px-4 py-1 text-black hover:bg-transparent hover:text-indigo-600   hover:border-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
         href="/download"
       >
         <span className="text-sm font-medium">Saiba mais</span>
